@@ -1,0 +1,81 @@
+.navbar{
+    height: 8vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 2em ;
+    z-index: 6;
+}
+.logo{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    font-family: 'Offside';
+}
+.logo > a{
+    color: white;
+    text-decoration: none;
+}
+.navbar-links{
+    list-style: none;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    width: 70%;
+}
+.navbar-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.navbar-link  a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Offside';
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 99;
+    min-width: 160px;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-submenu {
+    position: relative;
+    z-index: 99;
+}
+.dropdown-subcontent {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 99;
+    min-width: 160px;
+} 
+.dropdown-submenu:hover .dropdown-subcontent {
+    display: block;
+}
