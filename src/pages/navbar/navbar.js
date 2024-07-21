@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 import './navbar.css';
+import { useTranslation } from "react-i18next";
+import Switcher from "../switcher";
 
 function Navbar() {
+  const { t } = useTranslation();
     return (
       <div className="navbar">
           <div className="logo">
@@ -11,25 +14,31 @@ function Navbar() {
           <ul className='navbar-links'>
                 <li className='navbar-link'>
                     <div className="dropdown">
-                      <Link>Facilities</Link>
+                      <Link>{t('Facilities')}</Link>
                       <div className="dropdown-content">
                         <div className="dropdown-submenu">
-                          <Link>Sports</Link>
+                          <Link>{t('Sports')}</Link>
                           <div className="dropdown-subcontent">
-                            <Link to={'/facilities/sports/soccer'}>Soccer</Link>
-                            <Link to={'/facilities/sports/basketball'}>Basketball</Link>
-                            <Link to={'/facilities/sports/volleyball'}>Volleyball</Link>
+                            <Link to={'/facilities/sports/soccer'}>{t('Soccer')}</Link>
+                            <Link to={'/facilities/sports/basketball'}>{t('Basketball')}</Link>
+                            <Link to={'/facilities/sports/volleyball'}>{t('Volleyball')}</Link>
                           </div>
                         </div>
-                        <Link to={'/facilities/libraries'}>Libraries</Link>
+                        <Link to={'/facilities/libraries'}>{t('Libraries')}</Link>
                       </div>
                     </div>
                 </li>
                 <li className='navbar-link'>
-                  <Link to={'/events'}>Events</Link>
+                  <Link to={'/events'}>{t('Events')}</Link>
                 </li>
                 <li className='navbar-link'>
-                  <Link to={'/volunteer'}>Volunteer</Link>
+                  <Link to={'/volunteer'}>{t('Volunteer')}</Link>
+                </li>
+                <li className='navbar-link'>
+                  <Link to={'/contact'}>{t('Contact')}</Link>
+                </li>
+                <li>
+                  <Switcher />
                 </li>
           </ul>
       </div>

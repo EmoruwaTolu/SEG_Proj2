@@ -50,4 +50,42 @@
     box-sizing: border-box;
     padding: 2em;
     border-radius: 8px;
+    overflow: scroll;
+}
+.event-name{
+    font-size: 1em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #333300;
+    margin-bottom: 0.5em;
+}
+.event-info-body{
+    font-size: 0.8em;
+}
+.event-time-info{
+    font-size: 0.8em;
+}
+.events-list-container > ul{
+    padding: 0;
+    margin: 0;
+    overflow: scroll;
+    height: fit-content;
+}
+.event-info{
+    box-sizing: border-box;
+    padding: 2em;
+    display: flex;
+    list-style: none;
+    margin-bottom: 1em;
+    background-color: #E5E4E2;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Offside';
+    flex-direction: column;
+}
+.event-info > div{
+    text-align: start;
+}
+.event-info:hover{
+    background-color: #FF6666;
+    color: white;
 }

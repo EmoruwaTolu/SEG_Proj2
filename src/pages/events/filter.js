@@ -34,7 +34,7 @@ const Filter = ({ filters, updateFilters }) => {
                 { value: 'Sports', label: 'Sports' },
                 ]}
                 onChange={handleFilterChange}
-                isClearable
+                isClearable={!displaySports}
             />
         </div>
         {displaySports && (

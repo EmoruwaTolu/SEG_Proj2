@@ -9,6 +9,7 @@ import Soccer from './pages/sports-pages/soccer';
 import Basketball from './pages/sports-pages/basketball';
 import Volleyball from './pages/sports-pages/volleyball';
 import Library from './pages/sports-pages/library';
+import Contact from './pages/contact/contact';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/facilities/sports/basketball" Component={Basketball} />
           <Route path="/facilities/sports/volleyball" Component={Volleyball} />
           <Route path="/facilities/libraries" Component={Library} />
+          <Route path="/contact" Component={Contact} />
         </Routes>
       </div>
     </Router>

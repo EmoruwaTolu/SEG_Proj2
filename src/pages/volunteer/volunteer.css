@@ -81,12 +81,12 @@
     display: flex;
     justify-content: space-between;
 }
-.input-number-container > input{
+.input-number-container > div>  input{
     box-sizing: border-box;
     padding: 1em 2em;
     border: none;
     border-radius: 8px;
-    width: 40%;
+    width: 100%;
 }
 .submit-button-container{
     display: flex;
@@ -100,4 +100,20 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
+}
+.input-name-container > p{
+    display: flex;
+    justify-content: start;
+}
+.input-email-container > p{
+    display: flex;
+    justify-content: start;
+}
+.input-number-container > div > p{
+    display: flex;
+    justify-content: start;
+}
+.event-selector > p{
+    display: flex;
+    justify-content: left;
 }

@@ -3,8 +3,12 @@ import Landing from './landing.jpg';
 import Ellipses from './ellipses.png';
 import { Link } from 'react-router-dom';
 import './home.css';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
+
+  const { t } = useTranslation();
+
     return (
       <div className="home-body-container">
           <div className='home-body'>
@@ -20,10 +24,10 @@ const Home = () => {
                   <p>CENTRE</p>
                 </div>
                 <p>
-                  See what's happening in Sandy Hill today!
+                  {t("See what's happening in Sandy Hill today!")}
                 </p>
                 <div className='events-button-container'>
-                  <Link to={'/events'}>EVENTS</Link>
+                  <Link to={'/events'}>{t('EVENTS')}</Link>
                 </div>
                 <p>305 King Edward Drive, Ottawa, ON, K2H 9E8</p>
               </div>
