@@ -12,7 +12,7 @@ const Home = () => {
     return (
       <div className="home-body-container">
           <div className='home-body'>
-            <img src={Landing} />
+            <img src={Landing} alt="image in sandy hill" />
           </div>
           <div className='home-info-container'>
             <div className='home-info'>

@@ -34,7 +34,7 @@ const Soccer = () => {
             </div>
           </div>
           <div className='soccer-image-container'>
-            <img src={Ball}/>
+            <img src={Ball} alt="soccer ball"/>
           </div>
       </div>
     );

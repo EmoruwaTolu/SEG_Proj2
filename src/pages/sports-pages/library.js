@@ -34,7 +34,7 @@ const Library = () => {
             </div>
           </div>
           <div className='soccer-image-container'>
-            <img src={Books} style={{height: `120vh`, width: `auto`, transform: `translate(0%, -10%)`}}/>
+            <img src={Books} style={{height: `120vh`, width: `auto`, transform: `translate(0%, -10%)`}} alt="library picture"/>
           </div>
       </div>
     );

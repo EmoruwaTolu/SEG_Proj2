@@ -34,7 +34,7 @@ const Basketball = () => {
             </div>
           </div>
           <div className='soccer-image-container'>
-            <img src={Ball} style={{height: `100%`, width: `auto`, transform: `translate(0%, 0%)`}}/>
+            <img src={Ball} style={{height: `100%`, width: `auto`, transform: `translate(0%, 0%)`}} alt="baskteball image"/>
           </div>
       </div>
     );
